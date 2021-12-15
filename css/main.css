@@ -55,3 +55,27 @@ section::before{
     line-height: 1.5em;
     font-family: consolas;
 }
+@media(max-width:768px){
+    section{
+        height: 35vh;
+    }
+    .sec h2{
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+    .sec p{
+        font-size: 1em;
+    }
+}
+/* @media(max-width:280px){
+    section{
+        height: 35vh;
+    }
+    .sec h2{
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+    .sec p{
+        font-size: 1em;
+    }
+} */
