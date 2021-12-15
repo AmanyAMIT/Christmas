@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEEBDD;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section #snow{
+    width: 100%;
+}
+section #tree{
+    max-width: 40%;
+    left: 30%;
+    top: 20%;
+}
+
+section #santa{
+    top: 60%;
+    left: -30%;
+    max-width: 50%;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#EEEBDD,transparent);
+    z-index: 999999;
+}
+.sec{
+    position: relative;
+    padding: 10%;
+    text-align: center;
+}
+.sec h2{
+    font-family: 'Corinthia';
+    font-size: 5em;
+}
+.sec p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: consolas;
+}
