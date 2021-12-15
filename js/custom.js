@@ -5,6 +5,6 @@ gsap.to('#santa', {
 }).repeat(Infinity)
 
 gsap.from('#tree',{
-    duration: 15,
+    duration: 30,
     y : 8000,
 })
