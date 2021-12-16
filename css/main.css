@@ -55,10 +55,14 @@ section::before{
     line-height: 1.5em;
     font-family: consolas;
 }
+.Arabic p{
+    margin-top: 3%;
+}
 .copyright p{
     font-family: 'Corinthia';
     text-align: right;
     font-size: 25px;
+    margin-top: 3%;
 }
 @media(max-width:768px){
     section{
