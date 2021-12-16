@@ -1,5 +1,3 @@
-
-
 function animation(NewYear){
     if(NewYear.matches){
         gsap.to('#santa', {
@@ -26,5 +24,5 @@ function animation(NewYear){
     }
 }
 
-let NewYear = window.matchMedia("(max-width:280px)");
+let NewYear = window.matchMedia("(max-width:400px)");
 animation(NewYear);
