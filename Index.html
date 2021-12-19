@@ -1,23 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="supernova">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="https://cdn.jotfor.ms/assets/img/favicons/favicon-2021.svg">
     <title>Christmas</title>
+    <link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.29658" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/nova.css?3.3.29658">
+    <link rel="stylesheet"
+        href="https://cdn03.jotfor.ms/themes/CSS/5485c3ed700cc42e598b4567.css?themeRevisionID=5664cc36977cdf00078b4567">
+    <link rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.29658">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
-    <section>
+    <div id="login" class="form">
+        <div role="main" class="form-all">
+            <ul class="form-section page-section">
+                <li class="form-input-wide" data-type="control_head">
+                    <div class="form-header-group  header-default">
+                        <div class="header-text httal htvam">
+                            <h2 class="form-header" data-component="header">
+                                Contact Us
+                            </h2>
+                            <div class="form-subHeader">
+                                Please fill this form in a decent manner
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line jf-required" data-type="control_fullname" id="id_3" data-compound-hint=",">
+                    <label class="form-label form-label-left form-label-auto" id="label_3" for="first_3">
+                        Your Name
+                        <span class="form-required">
+                            *
+                        </span>
+                    </label>
+                    <div id="cid_3" class="form-input jf-required">
+                        <div data-wrapper-react="true">
+                            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                                <input type="text" id="name" class="form-textbox validate[required]" value="">
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line jf-required" data-type="control_email">
+                    <label class="form-label form-label-left form-label-auto">
+                        Password
+                        <span class="form-required">
+                            *
+                        </span>
+                    </label>
+                    <div class="form-input jf-required">
+                        <input type="password" id="password" class="form-textbox">
+                    </div>
+                </li>
+                <li class="form-line">
+                    <div class="form-input-wide">
+                        <div style="margin-left:156px" data-align="auto"
+                            class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                            <button id="input_8" type="submit"
+                                class="form-submit-button form-submit-button-none submit-button jf-form-buttons jsTest-submitField"
+                                data-component="button" data-content="" onclick="Check()">
+                                Send!
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="hidden" id="Santa">
         <img src="imgs/snow.jpeg" alt="Snow" id="snow">
         <img src="imgs/Tree.png" alt="Tree" id="tree">
         <img src="imgs/santa.png" alt="santa" id="santa">
     </section>
-    <div class="sec">
+
+    <div class="sec hidden" id="Message">
         <div class="content">
-            <h2>Happy New Year</h2>
+            <h2>Happy New Year <span id="UserName"></span></h2>
             <p>
                 If you are one of the people to whom I sent this link. You must know that you are one of the people
                 close to my heart.
@@ -26,11 +91,10 @@
                 heart
             </p>
             <div class="Arabic">
-                <p>
-
-                    إذا كنت من الأشخاص الذين أرسلت إليهم هذا الرابط. يجب أن تعلم أنك أحد الأشخاص المقربين إلى قلبي.
-                    وأنك تركت لي ذكرى جميلة جعلتني أشعر بالسعادة يومًا ما ، لذلك أردت أن أشكرك وأتمنى لك سنة جديدة سعيدة
-                    سنة جديدة وأنت أكثر صحة وسعادة ونجاحًا وقريب من قلبي
+                <p id="arabic">
+                    <!-- إذا كنت من الأشخاص الذين أرسلت إليهم هذا الرابط. يجب أن تعلم أنك أحد الأشخاص المقربين إلى قلبي.
+                        وأنك تركت لي ذكرى جميلة جعلتني أشعر بالسعادة يومًا ما ، لذلك أردت أن أشكرك وأتمنى لك سنة جديدة سعيدة
+                        سنة جديدة وأنت أكثر صحة وسعادة ونجاحًا وقريب من قلبي -->
                 </p>
             </div>
         </div>
@@ -38,12 +102,9 @@
             <p>Amany Abdelfattah</p>
         </div>
     </div>
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="js/custom.js"></script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script src="js/custom.js"></script>
 
 </html>

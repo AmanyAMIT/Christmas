@@ -4,8 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #EEEBDD;
+.hidden{
+    display: none;
 }
 section{
     position: relative;
@@ -38,13 +38,14 @@ section::before{
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#EEEBDD,transparent);
+    background: linear-gradient(to top,#EEEBDD,transparent) !important;
     z-index: 999999;
 }
 .sec{
     position: relative;
     padding: 10%;
     text-align: center;
+    background-color: #EEEBDD;
 }
 .sec h2{
     font-family: 'Corinthia';
@@ -64,6 +65,167 @@ section::before{
     font-size: 25px;
     margin-top: 3%;
 }
+.form{
+    margin-top: 10%;
+}
+
+.form-label-left{
+    width:130px;
+}
+.form-line{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+.form-label-right{
+    width:130px;
+}
+
+.form-all{
+    margin:0px auto;
+    padding-top:0px;
+    width:480px;
+    color:rgb(37, 56, 36) !important;
+    font-family:'Verdana';
+    font-size:12px;
+    border-image: url(https://shots.jotform.com/elton/christmas_border.png) 30 30 round !important;
+
+}
+.form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+    color: #555;
+}
+/* Injected CSS Code */
+/*PREFERENCES STYLE*/
+.form-all {
+font-family: Verdana, sans-serif;
+}
+
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+font-family: Verdana, sans-serif;
+}
+.form-all .form-pagebreak-back-container,
+.form-all .form-pagebreak-next-container {
+font-family: Verdana, sans-serif;
+}
+.form-header-group {
+font-family: Verdana, sans-serif;
+}
+.form-label {
+font-family: Verdana, sans-serif;
+}
+
+.form-label.form-label-auto {
+
+display: inline-block;
+float: left;
+text-align: left;
+
+}
+
+.form-line {
+margin-top: 12px;
+margin-bottom: 12px;
+}
+
+.form-all {
+max-width: 480px;
+width: 100%;
+}
+
+.form-label.form-label-left,
+.form-label.form-label-right,
+.form-label.form-label-left.form-label-auto,
+.form-label.form-label-right.form-label-auto {
+width: 130px;
+}
+
+.form-all {
+font-size: 12px
+}
+.form-all .qq-upload-button,
+.form-all .qq-upload-button,
+.form-all .form-submit-button,
+.form-all .form-submit-reset,
+.form-all .form-submit-print {
+font-size: 12px
+}
+.form-all .form-pagebreak-back-container,
+.form-all .form-pagebreak-next-container {
+font-size: 12px
+}
+
+.supernova .form-all, .form-all {
+background-color: rgba(255, 255, 255, 0.54);
+}
+
+.form-all {
+color: rgb(37, 56, 36);
+}
+.form-header-group .form-header {
+color: rgb(37, 56, 36);
+}
+.form-header-group .form-subHeader {
+color: rgb(37, 56, 36);
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label {
+color: rgb(37, 56, 36);
+}
+.form-sub-label {
+color: 1a1a1a;
+}
+
+.supernova {
+background-color: #fafafa;
+border-image: url(../imgs/christmas_border.png) 30 30 round !important;
+}
+.supernova body {
+background: transparent;
+}
+
+.form-textbox,
+.form-textarea,
+.form-dropdown,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+background-color: rgba(255, 255, 255, 0);
+}
+
+.supernova {
+    height: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: center top;
+}
+.supernova {
+    background-image: url("//www.jotform.com/uploads/EltonCris/form_files/footer_bg.png");
+    border-image: url(../imgs/christmas_border.png) 30 30 round !important;
+}
+#stage {
+    background-image: url("//www.jotform.com/uploads/EltonCris/form_files/footer_bg.png");
+}
+
+.form-all {
+background-image: none;
+border-image: url(../imgs/christmas_border.png) 30 30 round !important;
+}
+
+.ie-8 .form-all:before { display: none; }
+.ie-8 {
+margin-top: auto;
+margin-top: initial;
+}
+
+/*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+/* Injected CSS Code */
 @media(max-width:768px){
     section{
         height: 35vh;
@@ -74,6 +236,9 @@ section::before{
     }
     .sec p{
         font-size: 1em;
+    }
+    .form{
+        margin-top: 30%;
     }
 }
 /* @media(max-width:280px){
